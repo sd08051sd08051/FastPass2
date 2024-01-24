@@ -9,6 +9,7 @@ export async function POST(request: Request, response: Response) {
 
   try {
     // チェックアウトセッションの作成
+    // 作成
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
       metadata: {

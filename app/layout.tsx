@@ -1,3 +1,5 @@
+// 共通するものはLayout .tsxにおく
+
 import type { Metadata } from "next";
 import { Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
@@ -21,6 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
+      {/* フォントをGoogleからインポートする */}
       <body className={notoSansJP.className}>
         <NextAuthProvider>
           <Header />

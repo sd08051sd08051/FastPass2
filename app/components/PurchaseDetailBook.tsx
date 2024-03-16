@@ -26,6 +26,7 @@ const PurchaseDetailBook = ({
         <p className="mt-2 text-md text-slate-700">
           値段：{purchaseDetailBook.price}円
         </p>
+        <p className="mt-2 text-md text-slate-700">待ち時間：30分</p>
       </div>
     </div>
   );

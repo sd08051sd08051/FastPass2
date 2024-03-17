@@ -25,9 +25,7 @@ export default async function Home() {
     <>
       {/* Tailwind CSS スタイルクラス */}
       <main className="flex flex-wrap justify-center items-center md:mt-32 mt-20">
-        <h2 className="text-center w-full font-bold text-3xl mb-2">
-          Ramen Fast Pass
-        </h2>
+        <h2 className="text-center w-full font-bold text-3xl mb-2">お先ご麺</h2>
         {/* JSX内でJSを入れ込みNookコンポーネント配列を生成 */}
         {contents.map((book: BookType) => (
           <Book key={book.id} book={book} />

@@ -6,9 +6,15 @@ export const client = createClient({
   apiKey: process.env.NEXT_PUBLIC_API_KEY!,
 });
 
+console.log(`API Key: ${process.env.NEXT_PUBLIC_API_KEY}`);
+
 export const getAllBooks = async () => {
   const allBooks = await client.getList<BookType>({
     endpoint: "bookcommerce",
+    queries: {
+      offset: 0,
+      limit: 10,
+    },
   });
   return allBooks;
 };

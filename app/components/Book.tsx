@@ -55,14 +55,14 @@ const Book = ({ book }: BookProps) => {
   };
 
   const handlePurchaseConfirm = () => {
-    if (!user) {
-      setShowModal(false);
-      // ログインページへリダイレクト
-      router.push("/login");
-    } else {
-      // Stripeで決済する
-      startCheckout();
-    }
+    // if (!user) {
+    //   setShowModal(false);
+    //   // ログインページへリダイレクト
+    //   router.push("/login");
+    // } else {
+    //   // Stripeで決済する
+    startCheckout();
+    // }
   };
 
   return (

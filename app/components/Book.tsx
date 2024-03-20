@@ -112,16 +112,17 @@ const Book = ({ book }: BookProps) => {
               <h3 className="text-xl mb-4">パスを購入しますか？</h3>
               <p className="text-xl mb-3">※ラーメン代は含まれておりません</p>
               <button
+                onClick={handleCancel}
+                className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded  mr-5"
+              >
+                待ちます
+              </button>
+
+              <button
                 onClick={handlePurchaseConfirm}
                 className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-4"
               >
-                購入する
-              </button>
-              <button
-                onClick={handleCancel}
-                className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
-              >
-                キャンセル
+                お先ご麺購入
               </button>
             </div>
           </div>

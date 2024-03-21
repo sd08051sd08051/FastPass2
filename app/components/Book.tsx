@@ -61,7 +61,8 @@ const Book = ({ book }: BookProps) => {
     //   router.push("/login");
     // } else {
     //   // Stripeで決済する
-    startCheckout();
+    // startCheckout();
+    router.push("book/checkout-success");
     // }
   };
 

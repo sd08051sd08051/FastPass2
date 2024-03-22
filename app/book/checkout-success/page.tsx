@@ -3,6 +3,8 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
+// import localImage from "public/ticket/FastTicket.png";
+// import Image from "next/image";
 
 const PurchaseSuccess = () => {
   const [bookUrl, setBookUrl] = useState(null);
@@ -48,6 +50,7 @@ const PurchaseSuccess = () => {
           こちらの画面を店員にお見せください
         </h1>
         <div className="mt-6 text-center">
+          {/* <Image src={localImage} alt="Fast" /> */}
           {/* <Link
             href={`/book/${bookUrl}`}
             className="text-indigo-600 hover:text-indigo-800 transition duration-300"

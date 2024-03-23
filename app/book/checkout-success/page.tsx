@@ -3,6 +3,8 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
+// import localImage from "public/ticket/FastTicket.png";
+// import Image from "next/image";
 
 const PurchaseSuccess = () => {
   const [bookUrl, setBookUrl] = useState(null);
@@ -39,21 +41,22 @@ const PurchaseSuccess = () => {
     <div className="flex items-center justify-center  mt-20">
       <div className="bg-white p-6 rounded-lg shadow-lg">
         <h1 className="text-2xl font-bold text-center text-gray-800 mb-4">
-          FastPass購入ありがとうございます！
+          〇〇様FastPass購入ありがとうございます！
         </h1>
-        <p className="text-center text-gray-600">
+        {/* <p className="text-center text-gray-600">
           ご購入いただいた内容の詳細は、登録されたメールアドレスに送信されます。
-        </p>
+        </p> */}
         <h1 className="text-center text-gray-700">
-          メールの画面を店員にお見せください
+          こちらの画面を店員にお見せください
         </h1>
         <div className="mt-6 text-center">
-          <Link
+          {/* <Image src={localImage} alt="Fast" /> */}
+          {/* <Link
             href={`/book/${bookUrl}`}
             className="text-indigo-600 hover:text-indigo-800 transition duration-300"
           >
             購入したFast pass確認
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>

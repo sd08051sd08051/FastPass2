@@ -12,10 +12,10 @@ const Header = async () => {
   // console.log(user);
 
   return (
-    <header className="bg-blue-600 text-gray-100 shadow-lg">
+    <header className="bg-orange-600 text-gray-100 shadow-lg">
       <nav className="flex items-center justify-between p-4">
         <Link href={"/"} className="text-xl font-bold">
-          Ramen Fast Pass APP 〜お先にご麺〜
+          Ramen Fast Pass APP 〜お先ご麺〜
         </Link>
         <div className="flex items-center gap-1">
           <Link

@@ -55,14 +55,15 @@ const Book = ({ book }: BookProps) => {
   };
 
   const handlePurchaseConfirm = () => {
-    if (!user) {
-      setShowModal(false);
-      // ログインページへリダイレクト
-      router.push("/login");
-    } else {
-      // Stripeで決済する
-      startCheckout();
-    }
+    // if (!user) {
+    //   setShowModal(false);
+    //   // ログインページへリダイレクト
+    //   router.push("/login");
+    // } else {
+    //   // Stripeで決済する
+    // startCheckout();
+    router.push("book/checkout-success");
+    // }
   };
 
   return (
@@ -99,7 +100,7 @@ const Book = ({ book }: BookProps) => {
           />
           <div className="px-4 py-4 bg-slate-100 rounded-b-md">
             <h2 className="text-lg font-semibold">{book.title}</h2>
-            <p className="mt-2 text-lg text-slate-600">現在の待ち時間は...分</p>
+            <p className="mt-2 text-lg text-slate-600">現在の待ち時間は135分</p>
             <p className="mt-2 text-md text-slate-700">
               FastPass値段：{book.price}円
             </p>
@@ -112,16 +113,17 @@ const Book = ({ book }: BookProps) => {
               <h3 className="text-xl mb-4">パスを購入しますか？</h3>
               <p className="text-xl mb-3">※ラーメン代は含まれておりません</p>
               <button
+                onClick={handleCancel}
+                className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded  mr-5"
+              >
+                待ちます
+              </button>
+
+              <button
                 onClick={handlePurchaseConfirm}
                 className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-4"
               >
-                購入する
-              </button>
-              <button
-                onClick={handleCancel}
-                className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
-              >
-                キャンセル
+                お先ご麺購入
               </button>
             </div>
           </div>

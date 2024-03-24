@@ -12,7 +12,7 @@ const nextConfig = {
       },
     ],
   },
-  reactStictmode: false,
+  reactStrictmode: false,
 };
 
 module.exports = nextConfig;

@@ -99,11 +99,9 @@ const Book = ({ book }: BookProps) => {
             className="rounded-t-md"
           />
           <div className="px-4 py-4 bg-slate-100 rounded-b-md">
-            <h2 className="text-lg font-semibold">G'sリアン</h2>
-            <p className="mt-2 text-lg text-slate-600">
-              現在の待ち時間は5555分
-            </p>
-            <p className="mt-2 text-md text-slate-700">FastPass値段：40円</p>
+            <h2 className="text-lg font-semibold">銀座　八五</h2>
+            <p className="mt-2 text-lg text-slate-600">現在の待ち時間は125分</p>
+            <p className="mt-2 text-md text-slate-700">FastPass値段：1040円</p>
           </div>
         </a>
         <a
@@ -119,9 +117,9 @@ const Book = ({ book }: BookProps) => {
             className="rounded-t-md"
           />
           <div className="px-4 py-4 bg-slate-100 rounded-b-md">
-            <h2 className="text-lg font-semibold">G'sリアン</h2>
-            <p className="mt-2 text-lg text-slate-600">現在の待ち時間は555分</p>
-            <p className="mt-2 text-md text-slate-700">FastPass値段：50円</p>
+            <h2 className="text-lg font-semibold">神田 わいず</h2>
+            <p className="mt-2 text-lg text-slate-600">現在の待ち時間は25分</p>
+            <p className="mt-2 text-md text-slate-700">FastPass値段：500円</p>
           </div>
         </a>
 
